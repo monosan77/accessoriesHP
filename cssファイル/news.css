@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* -----------------------------------------
+NEWSページ
+------------------------------------------ */
+
+/* -----------------------------------------
+mainvisual
+------------------------------------------ */
+#news-mainvisual{
+    background-image: url(../img/news.manvisual.webp);
+}
+
+/* -----------------------------------------
+news-contents
+------------------------------------------ */
+#news-contents{    
+    padding: 50px ;
+    >.news-list{
+        
+        border: solid 1px #ccc;
+        >li{
+            border-bottom: solid 1px #ccc;
+            width: 100%;
+            >a{
+                display: block;
+                padding: 10px 30px;
+                >time{
+                    font-size: 0.7rem;
+                    color: #8f8f8f;
+                }
+                &:hover{
+                    opacity: 0.65;
+                }
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}
+/* -----------------------------------------
+news-numberArea
+------------------------------------------ */
+#news-numberArea{
+    margin-bottom: 100px;
+    >ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        >li{
+            margin: 2.5px;
+            >a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.2s;                
+                border: solid 1px #ccc;
+                &:hover{
+                    background-color: #ff004b;
+                    color: #fff;
+                    border: none;
+                }
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        >.box{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        >.bk-pink{
+            background-color: #ff004b;
+            color: #fff;
+            border: none;
+        }
+    }
+}
+
+/* -----------------------------------------
+SP width 1000px 以下
+------------------------------------------ */
+@media screen and (max-width:1000px) {
+    #news-contents {
+        padding: 50px 20px;
+    }
+    .text{
+        font-size: 0.7rem;
+    }
+    #news-numberArea{
+        padding: 0 20px;
+    }
+}

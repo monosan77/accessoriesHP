@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* -----------------------------------------
+ITEM 商品ページ
+------------------------------------------ */
+/* 共通設定 */
+.ITEM-bk-pink {
+  background-color: rgb(255, 0, 60);
+}
+.ITEM-bk-orenge {
+  background-color: rgb(255, 85, 13);
+}
+.ITEM-bk-gray {
+  background-color: rgb(202, 202, 202);
+}
+.ITEM-bk-blue {
+  background-color: rgb(0, 149, 255);
+}
+.ITEM-bk-purple {
+  background-color: rgb(144, 0, 255);
+}
+
+/* -----------------------------------------
+main メインビジュアル
+------------------------------------------ */
+
+#item-mainvisual {
+  margin-top: 120px;
+  background-image: url(../img/aks/ring05.png);
+}
+
+/* -----------------------------------------
+main 　アイテム一覧
+------------------------------------------ */
+#item-lists {
+  margin-bottom: 80px;
+  > .select-sort {
+    display: flex;
+    padding: 70px 0px;
+    position: relative;
+    > .content {
+      position: relative;
+      > .js-select-btn {
+        font-size: 0.9rem;
+        color: #7b7b7b;
+        cursor: pointer;
+        position: relative;
+        padding-right: 30px;
+        margin-right: 20px;
+        &::after {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-width: 0 1px 1px 0;
+          border-style: solid;
+          border-color: transparent #7b7b7b #7b7b7b transparent;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 15%;
+          right: 5px;
+        }
+      }
+      > .list {
+        position: absolute;
+        width: 170px;
+        background-color: #fff;
+        border: solid 1px #ccc;
+        z-index: 20;
+        > li {
+          padding: 10px;
+          font-size: 0.85rem;
+          color: #7b7b7b;
+          cursor: pointer;
+          > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0.8rem;
+            color: #7b7b7b;
+          }
+          &.active {
+            background-color: #e6e4e4;
+          }
+          &:hover {
+            background-color: #edecec;
+          }
+        }
+        &.active {
+          display: block;
+        }
+      }
+    }
+    > .category {
+      > .list {
+        display: none;
+      }
+    }
+    > .item-sort {
+      > .list {
+        display: none;
+      }
+    }
+    > .stock {
+      > .list {
+        display: none;
+      }
+    }
+  }
+  > #item-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 50px;
+    > .item {
+      width: 24.5%;
+      padding: 0 2px 15px 2px;
+
+      > a {
+        position: relative;
+        display: block;
+        > img {
+          width: 100%;
+        }
+        > .text-area {
+          padding: 10px;
+        }
+        > .item-categories {
+          padding: 7px 10px;
+          color: #fff;
+          font-size: 0.65rem;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+      }
+    }
+  }
+
+  > .loadBtn {
+    text-align: center;
+
+    > .loadBtnText {
+      display: inline;
+      padding: 13px 80px;
+      background-color: #ecebeb;
+      cursor: pointer;
+      transition: 0.1s;
+      &:hover {
+        background-color: #606060;
+        color: #fff;
+      }
+      &.active {
+        opacity: 0;
+        cursor: default;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
+coinAccessories.html　コインアクセサリーページ
+------------------------------------------ */
+.narrow-down-btn {
+  margin: 70px auto 0 auto;
+  > .narrowDown-list {
+    width: 90%;
+    display: flex;
+    > li {
+      width: 20%;
+      margin: -0.5px;
+      font-size: 0.8rem;
+      padding: 20px 0;
+      color: #525252;
+      text-align: center;
+      border: solid 1px #ccc;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        color: #fff;
+        background-color: rgb(255, 29, 142);
+      }
+      &.active {
+        color: #fff;
+        background-color: rgb(255, 29, 142);
+      }
+    }
+  }
+}
+
+#item-lists.coinAccessories .select-sort .category {
+  display: none;
+}
+
+/* -----------------------------------------
+width 870px以下の時の対応表示
+------------------------------------------ */
+@media screen and (max-width: 870px) {
+  .narrow-down-btn {
+    > .narrowDown-list {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      > li {
+        min-width: 145px;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  #item-lists {
+    > #item-detail {
+      > .item {
+        width: 49%;
+      }
+    }
+  }
+}
