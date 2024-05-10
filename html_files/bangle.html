@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【非公式】n.t.cコインアクセサリーショップ</title>
+    <title>アクセサリーショップ</title>
     <link rel="stylesheet" href="../default.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../cssファイル/item.css">
+    <link rel="stylesheet" href="../cssfiles/item.css">
 </head>
 <body>
   <header id="header" class="">
@@ -21,10 +21,10 @@
                 <ul class="menu-list">
                     <li><a href="">会員登録</a></li>
                     <li><a href="">ログイン</a></li>
-                    <li><a href=""><img src="../img/虫眼鏡-50.png" alt=""></a></li>
+                    <li><a href=""><img src="../img/glass.png" alt=""></a></li>
                     <li>
                         <a href="">
-                            <img src="../img/カート白-50.png" alt="">
+                            <img src="../img/cart-50.png" alt="">
                             <p class="cart">カート</p>
                         </a>
                     </li>
@@ -87,7 +87,7 @@
                   /></a>
                 </li>
                 <li>
-                  <a href=""><img src="./img/メール-50.png" alt="" /></a>
+                  <a href=""><img src="./img/mail-50.png" alt="" /></a>
                 </li>
               </ul>
             </nav>
@@ -139,74 +139,78 @@
     </div>
   </header>
         
-    <main>
-        <div id="item-mainvisual" class="mainvisual">
-            <div class="container">
-                <h2 class="page-title">ITEM</h2>                
-            </div>
+  <main>
+    <div id="item-mainvisual" class="mainvisual">
+        <div class="container">
+            <h2 class="page-title">BANGLE / BRACELET</h2>                
         </div>
-        <div id="hierarchy" class="news-hierarchy">
-            <ul class="container wrapper">
-                <li><a href="../index.html"><img src="../img/icons8-家-64.png" alt=""></a></li>
-                <li>></li>
-                <li><p>商品</p></li>
-            </ul>
+    </div> 
+    <div id="hierarchy" class="news-hierarchy">
+        <ul class="container wrapper">
+            <li><a href="../index.html"><img src="../img/house-64.png" alt=""></a></li>
+            <li>></li>
+            <li><a href="./itemIndex.html">商品</a></li>
+            <li>></li>
+            <li><a href="./coinAccessories.html">コインアクセサリー</a></li>
+            <li>></li>
+            <li><p>バングル・ブレスレット</p></li>
+        </ul>
+    </div>
+
+    <div id="item-lists" class="wrapper">
+        <div class="select-sort">
+            <!-- <div class="category content">
+                <p class="select-btn js-select-btn">カテゴリー</p>
+                <ul class="list js-list1">
+                    <li><a href="./coinAccessories.html">コインアクセサリー</a></li>
+                    <li><a href="./coinRing.html">コインリング</a></li>
+                    <li><a href="./sliverCoin.html">シルバーコインリング</a></li>
+                    <li><a href="./necklace.html">ネックレス</a></li>
+                    <li><a href="./bangle.html">バングル・ブレスレット</a></li>
+                    <li><a href="./earrings.html">ピアス・イヤリング</a></li>
+                </ul>
+            </div> -->
+
+            <div class="item-sort content">
+                <p class="select-btn js-select-btn">並び順</p>
+                <ul class="list js-list2">
+                    <li id="js-newOrder" class="active">新着順</li>
+                    <li id="js-popularOrder">人気順</li>
+                    <li id="js-priceHight">価格が高い順</li>
+                    <li id="js-priceLow">価格が低い順</li>
+                    <li id="js-recomOrder">おすすめ順</li>
+                </ul>
+            </div>
+            <div class="stock content">
+                <p class="select-btn js-select-btn">在庫</p>
+                <ul class="list js-list3">
+                    <li>在庫</li>
+                    <li>すべて</li>                        
+                </ul>
+            </div>
+            
         </div>
 
-        <div id="item-lists" class="wrapper">
-            <div class="select-sort">
-                <div class="category content">
-                    <p class="select-btn js-select-btn">カテゴリー</p>
-                    <ul class="list js-list1">
-                        <li><a href="./coinAccessories.html">コインアクセサリー</a></li>
-                        <li><a href="./coinRing.html">コインリング</a></li>
-                        <li><a href="./sliverCoin.html">シルバーコインリング</a></li>
-                        <li><a href="./necklace.html">ネックレス</a></li>
-                        <li><a href="./bangle.html">バングル・ブレスレット</a></li>
-                        <li><a href="./earrings.html">ピアス・イヤリング</a></li>
-                    </ul>
+        <div id="item-detail">
+            <!-- ↓ここに商品の配列データから商品情報を抽出してHTMLを自動書き込み -->
+            <!-- <div class="item">
+              <a href="">
+                <img src="../img/item02.webp" alt="">
+                <div class="text-area">
+                  <p class="title">商品名ーーーーーーーーー</p>
+                  <p class="cost">¥2,000(税込)</p>
                 </div>
-
-                <div class="item-sort content">
-                    <p class="select-btn js-select-btn">並び順</p>
-                    <ul class="list js-list2">
-                        <li id="js-newOrder" class="active">新着順</li>
-                        <li id="js-popularOrder">人気順</li>
-                        <li id="js-priceHight">価格が高い順</li>
-                        <li id="js-priceLow">価格が低い順</li>
-                        <li id="js-recomOrder">おすすめ順</li>
-                    </ul>
-                </div>
-                <div class="stock content">
-                    <p class="select-btn js-select-btn">在庫</p>
-                    <ul class="list js-list3">
-                        <li>在庫</li>
-                        <li>すべて</li>                        
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div id="item-detail">
-                <!-- ↓ここに商品の配列データから商品情報を抽出してHTMLを自動書き込み -->
-                <!-- <div class="item">
-                  <a href="">
-                    <img src="../img/item02.webp" alt="">
-                    <div class="text-area">
-                      <p class="title">商品名ーーーーーーーーー</p>
-                      <p class="cost">¥2,000(税込)</p>
-                    </div>
-                    <p class="item-categories">ネックレス</p>
-                  </a>
-                </div> -->
-            </div>
-            <div class="loadBtn">
-                <p id="js-loadBtn" class="loadBtnText">Load More</p>
-            </div>
+                <p class="item-categories">ネックレス</p>
+              </a>
+            </div> -->
         </div>
-        
-        
-    </main>
+        <div class="loadBtn">
+            <p id="js-loadBtn" class="loadBtnText">Load More</p>
+        </div>
+    </div>
+    
+    
+  </main>
     
     <footer id="footer">
       <div class="footer-blog">
@@ -267,7 +271,7 @@
         <div class="menu">
           <h3 class="list-title">MENU</h3>
           <ul class="menu-list">
-            <li><a href="../htmlファイル/news.html">お知らせ</a></li>
+            <li><a href="./news.html">お知らせ</a></li>
             <li><a href="">テキストテキスト</a></li>
             <li><a href="">テキストテキスト</a></li>
             <li><a href="">テキストテキスト</a></li>
@@ -336,7 +340,7 @@
             <a href=""><img src="../img/pinterest-60.png" alt="" /></a>
           </li>
           <li>
-            <a href=""><img src="../img/メール-50.png" alt="" /></a>
+            <a href=""><img src="../img/mail-50.png" alt="" /></a>
           </li>
         </ul>
       </div>
@@ -346,8 +350,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../main.js"></script>
-<script src="../jsファイル/itemList.js"></script>
-<script src="../jsファイル/item.js"></script>
-
+<script src="../js_files/itemList.js"></script>
+<script src="../js_files/bangle.js"></script>
 
 </html>

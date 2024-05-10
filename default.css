@@ -986,7 +986,7 @@ width 1000px以下の時の対応表示
   }
   /* header */
   #header {
-    height: 100px;
+    height: 80px;
   }
   #header .wrapper {
     padding: 0 0 0 15px;
@@ -1155,6 +1155,7 @@ width 1000px以下の時の対応表示
 
   /* mainvisual */
   #mainvisual {
+    padding-top: 100px;
     > .swiper1 {
       height: 500px;
     }
